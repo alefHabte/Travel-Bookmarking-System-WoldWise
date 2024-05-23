@@ -30,6 +30,7 @@ function CityItem({ city }) {
     </ul>
   );
 }
+
 CityItem.propTypes = {
   city: PropTypes.object,
 };

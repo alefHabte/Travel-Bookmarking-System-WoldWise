@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 function BackButton() {
   const navigate = useNavigate();
   return (
@@ -14,5 +15,8 @@ function BackButton() {
     </Button>
   );
 }
+Button.propTypes = {
+  children: PropTypes.node,
+};
 
 export default BackButton;
