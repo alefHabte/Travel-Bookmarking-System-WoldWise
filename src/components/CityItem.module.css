@@ -2,8 +2,8 @@
 .cityItem:link,
 .cityItem:visited {
   display: flex;
+  justify-content: space-between;
   gap: 1.6rem;
-  align-items: center;
 
   background-color: var(--color-dark--2);
   border-radius: 7px;
@@ -29,7 +29,7 @@
 .name {
   font-size: 1.7rem;
   font-weight: 600;
-  margin-right: auto;
+  margin-right: ;
 }
 
 .date {

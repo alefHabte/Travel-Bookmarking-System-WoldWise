@@ -9,7 +9,7 @@ function CountryList() {
   const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
   if (!cities.length)
-    return <Message message="Add a city by clicking on the map" />;
+    return <Message message="Add a by country clicking on the map" />;
 
   // const countries = cities.reduce((arr, city) => {
   //   if (!arr.map((el) => el.country).includes(city.country))

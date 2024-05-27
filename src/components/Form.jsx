@@ -6,10 +6,12 @@ import styles from "./Form.module.css";
 import Button from "./Button";
 import BackButton from "./BackButton";
 import { usePosition } from "../hooks/usePosition";
-import { useGeolocation } from "../hooks/useGeolocation";
 import Message from "./Message";
 import Spinner from "./Spinner";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { useCities } from "../contexts/CitiesContext";
+import { useNavigate } from "react-router-dom";
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
     .toUpperCase()
@@ -29,8 +31,11 @@ function Form() {
   const [notes, setNotes] = useState("");
   const [windowError, setWindowError] = useState("");
   const [emoji, setEmoji] = useState("");
+  const { createCity, isLoading } = useCities();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    if (!mapLat || !mapLng) return;
     async function getData() {
       try {
         setIsLoadingGeo(true);
@@ -39,10 +44,10 @@ function Form() {
           `${Base_Url}?latitude=${mapLat}&longitude=${mapLng}`
         );
         const data = await res.json();
-        if (!data.countryCode) throw new Error("No such ciy exists");
+        if (!data.countryCode) throw new Error("No such Place exists");
         setCityName(data.city || data.locality || "");
-        setCountry(data.country);
-        console.log(data);
+        setCountry(data.countryName);
+
         setEmoji(data.countryCode);
       } catch (err) {
         setWindowError(err.message);
@@ -53,10 +58,29 @@ function Form() {
 
     getData();
   }, [mapLat, mapLng]);
+  async function handelSubmit(e) {
+    e.preventDefault();
+    const newCity = {
+      cityName,
+      country,
+      emoji,
+      date,
+      notes,
+      position: { lat: mapLat, lng: mapLng },
+    };
+
+    await createCity(newCity);
+    navigate("/AppLayout/cities");
+  }
+  if (!mapLat || !mapLng)
+    return <Message message={"Plese select a place on the map"} />;
   if (isLoadingGro) return <Spinner />;
   if (windowError) return <Message message={windowError} />;
   return (
-    <form className={styles.form}>
+    <form
+      className={`${styles.form} ${isLoading ? styles.loading : ""}`}
+      onSubmit={handelSubmit}
+    >
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -69,10 +93,12 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+
+        <DatePicker
           id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
+          selected={date}
+          onChange={(date) => setDate(date)}
+          dateFormat="dd/mm/yyy"
         />
       </div>
 
