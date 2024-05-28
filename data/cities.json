@@ -1,27 +1,87 @@
 {
   "cities": [
     {
-      "id": "0728",
-      "cityName": "Madrid",
+      "id": "5093",
+      "cityName": "Lles de Cerdanya",
       "country": "Spain",
       "emoji": "ES",
-      "date": "2024-05-27T18:53:59.166Z",
+      "date": "2024-05-27T22:19:32.849Z",
       "notes": "",
       "position": {
-        "lat": "40.46058194944352",
-        "lng": "-3.7792968750000004"
+        "lat": "42.40777359968624",
+        "lng": "1.6259765625"
       }
     },
     {
-      "id": "632b",
-      "cityName": "Zvenihorodka",
-      "country": "Ukraine",
-      "emoji": "UA",
-      "date": "2024-05-27T18:54:12.215Z",
+      "id": "99eb",
+      "cityName": "La Nava de Ricomalillo",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-05-27T22:59:09.151Z",
       "notes": "",
       "position": {
-        "lat": "48.79853262504944",
-        "lng": "30.761718750000004"
+        "lat": "39.663201593628486",
+        "lng": "-4.965820312500001"
+      }
+    },
+    {
+      "id": "5a1d",
+      "cityName": "Xinzo de Limia",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-05-27T22:59:23.248Z",
+      "notes": "",
+      "position": {
+        "lat": "42.04026741228331",
+        "lng": "-7.756347656250001"
+      }
+    },
+    {
+      "id": "e95c",
+      "cityName": "Vegasdel Condado",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-05-27T23:03:04.978Z",
+      "notes": "",
+      "position": {
+        "lat": "42.60032919948187",
+        "lng": "-5.383300781250001"
+      }
+    },
+    {
+      "id": "511c",
+      "cityName": "Alcantara",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-05-27T23:11:17.299Z",
+      "notes": "",
+      "position": {
+        "lat": "39.69706252083487",
+        "lng": "-6.921386718750001"
+      }
+    },
+    {
+      "id": "a588",
+      "cityName": "Alfajarin",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-05-27T23:11:22.703Z",
+      "notes": "",
+      "position": {
+        "lat": "41.581070236855005",
+        "lng": "-0.703125"
+      }
+    },
+    {
+      "id": "ffe8",
+      "cityName": "Toronto",
+      "country": "Canada",
+      "emoji": "CA",
+      "date": "2024-05-27T23:11:28.642Z",
+      "notes": "",
+      "position": {
+        "lat": "43.65966347724658",
+        "lng": "-79.36386108398439"
       }
     }
   ]
