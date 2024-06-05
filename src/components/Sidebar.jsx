@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import AppNav from "./AppNav";
 import Logo from "./Logo";
 import styles from "./Sidebar.module.css";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 function Sidebar() {
   return (
