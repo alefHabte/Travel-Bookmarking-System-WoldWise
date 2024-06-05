@@ -7,7 +7,7 @@ import {
   useReducer,
 } from "react";
 
-const BASE_URL = "https://alefhabte.github.io/WorldWise-Data/cities.json";
+const BASE_URL = "http://localhost:8000/";
 const CitiesContext = createContext();
 
 const initialState = {
@@ -87,7 +87,7 @@ function CitiesProvider({ children }) {
       dispatch({ type: "loaded" });
       try {
         // setIsLoading(true);
-        const response = await fetch(`${BASE_URL}cities`);
+        const response = await fetch(`${BASE_URL}`);
         const data = await response.json();
         dispatch({ type: "cities/loaded", payload: data });
         // setCities(data);

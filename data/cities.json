@@ -1,0 +1,160 @@
+{
+  "cities": [
+    {
+      "id": "85ca",
+      "cityName": "Tamajon",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T14:40:10.760Z",
+      "notes": "",
+      "position": {
+        "lat": "41.011995591435664",
+        "lng": "-3.2629394531250004"
+      }
+    },
+    {
+      "id": "f2c7",
+      "cityName": "Cantalojas",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:10:57.990Z",
+      "notes": "",
+      "position": {
+        "lat": "41.23557554016178",
+        "lng": "-3.3508300781250004"
+      }
+    },
+    {
+      "id": "5b62",
+      "cityName": "Villardeciervos",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:11:02.654Z",
+      "notes": "",
+      "position": {
+        "lat": "41.925570519279574",
+        "lng": "-6.295166015625001"
+      }
+    },
+    {
+      "id": "fc66",
+      "cityName": "Saint-Benigne",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2024-06-05T15:11:08.487Z",
+      "notes": "",
+      "position": {
+        "lat": "46.46468723032149",
+        "lng": "4.921875000000001"
+      }
+    },
+    {
+      "id": "7fa6",
+      "cityName": "Davron",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2024-06-05T15:11:34.735Z",
+      "notes": "",
+      "position": {
+        "lat": "48.860303981624",
+        "lng": "1.9335937500000002"
+      }
+    },
+    {
+      "id": "0b07",
+      "cityName": "Ocle Pychard",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "GB",
+      "date": "2024-06-05T15:11:38.370Z",
+      "notes": "",
+      "position": {
+        "lat": "52.102941420023505",
+        "lng": "-2.5927734375000004"
+      }
+    },
+    {
+      "id": "84f7",
+      "cityName": "Lecinena",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:12:11.499Z",
+      "notes": "",
+      "position": {
+        "lat": "41.860817399254614",
+        "lng": "-0.5603027343750001"
+      }
+    },
+    {
+      "id": "fd86",
+      "cityName": "Sartirana Lomellina",
+      "country": "Italy",
+      "emoji": "IT",
+      "date": "2024-06-05T15:12:16.599Z",
+      "notes": "",
+      "position": {
+        "lat": "45.11493953218143",
+        "lng": "8.657226562500002"
+      }
+    },
+    {
+      "id": "6eb8",
+      "cityName": "Mejorada del Campo",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:16:36.284Z",
+      "notes": "",
+      "position": {
+        "lat": "40.403692315979",
+        "lng": "-3.4606933593750004"
+      }
+    },
+    {
+      "id": "4811",
+      "cityName": "Serradilla del Arroyo",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:16:39.573Z",
+      "notes": "",
+      "position": {
+        "lat": "40.56231751653895",
+        "lng": "-6.39404296875"
+      }
+    },
+    {
+      "id": "9059",
+      "cityName": "AAAAAAAAAAAAAAa",
+      "country": "Andorra",
+      "emoji": "AD",
+      "date": "2024-06-05T15:16:45.956Z",
+      "notes": "",
+      "position": {
+        "lat": "42.503419222025244",
+        "lng": "1.6149902343750002"
+      }
+    },
+    {
+      "id": "24a0",
+      "cityName": "La Guillermie",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2024-06-05T15:20:34.838Z",
+      "notes": "",
+      "position": {
+        "lat": "45.97608619828686",
+        "lng": "3.6474609375000004"
+      }
+    },
+    {
+      "id": "9256",
+      "cityName": "Sepmes",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2024-06-05T15:20:37.816Z",
+      "notes": "",
+      "position": {
+        "lat": "47.0647646283252",
+        "lng": "0.6591796875000001"
+      }
+    }
+  ]
+}
