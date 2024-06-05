@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 #Json files
-/data
+data
