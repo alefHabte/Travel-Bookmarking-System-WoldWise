@@ -8,5 +8,5 @@ function CountryItem({ country }) {
     </li>
   );
 }
-CountryItem.propTypes = { country: PropTypes.array };
+CountryItem.propTypes = { country: PropTypes.object };
 export default CountryItem;

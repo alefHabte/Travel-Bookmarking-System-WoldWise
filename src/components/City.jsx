@@ -17,13 +17,19 @@ import { useParams } from "react-router-dom";
 //     weekday: "long",
 //   }).format(new Date(date));
 
+const formatDate = (date) => {
+  if (!date) return "Invalid date";
+  return format(new Date(date), "dd-MM-yyyy");
+};
 function City() {
   const { id } = useParams();
+  const { getCity, currentCity, isLoading } = useCities();
+
   useEffect(() => {
     getCity(id);
-  }, [id]);
+  }, [getCity, id]);
 
-  const { getCity, currentCity, isLoading } = useCities();
+  const { cityName, emoji, date, notes } = currentCity;
   // const [searchParams, setSearchParams] = useSearchParams();
   // const lat = searchParams.get("lat");
   // const lng = searchParams.get("lng");
@@ -36,8 +42,6 @@ function City() {
   //   notes: "My favorite city so far!",
   // };
 
-  const { cityName, emoji, date, notes } = currentCity;
-
   // return (
   //   <>
   //     <h1>NY City {id}</h1>
@@ -46,10 +50,6 @@ function City() {
   //     </h2>
   //   </>
   // );
-  const formatDate = (date) => {
-    if (!date) return "Invalid date";
-    return format(new Date(date), "dd-MM-yyyy");
-  };
   if (isLoading) return <Spinner />;
   return (
     <div className={styles.city}>

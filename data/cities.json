@@ -1,63 +1,15 @@
 {
   "cities": [
     {
-      "id": "a588",
-      "cityName": "Alfajarin",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2024-05-27T23:11:22.703Z",
+      "id": "c121",
+      "cityName": "Krasnogorskoye",
+      "country": "Russian Federation (the)",
+      "emoji": "RU",
+      "date": "2024-06-05T14:28:40.582Z",
       "notes": "",
       "position": {
-        "lat": "41.581070236855005",
-        "lng": "-0.703125"
-      }
-    },
-    {
-      "id": "57a4",
-      "cityName": "London",
-      "country": "Canada",
-      "emoji": "CA",
-      "date": "2024-05-28T19:31:52.339Z",
-      "notes": "",
-      "position": {
-        "lat": "42.925428842207815",
-        "lng": "-81.27685546875001"
-      }
-    },
-    {
-      "id": "fda1",
-      "cityName": "La Iglesuela del Tietar",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2024-05-28T21:14:45.926Z",
-      "notes": "",
-      "position": {
-        "lat": "40.221570846921985",
-        "lng": "-4.691162109375001"
-      }
-    },
-    {
-      "id": "6998",
-      "cityName": "Hamilton",
-      "country": "Canada",
-      "emoji": "CA",
-      "date": "2024-05-28T21:14:58.562Z",
-      "notes": "",
-      "position": {
-        "lat": "43.206220853896696",
-        "lng": "-79.91455078125001"
-      }
-    },
-    {
-      "id": "ae26",
-      "cityName": "San Llorente",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2024-05-29T00:43:00.146Z",
-      "notes": "",
-      "position": {
-        "lat": "41.713930073371294",
-        "lng": "-4.086914062500001"
+        "lat": "57.708799352947764",
+        "lng": "52.03125"
       }
     }
   ]

@@ -2,13 +2,13 @@ import styles from "./CountryItem.module.css";
 import PropTypes from "prop-types";
 import Message from "./Message";
 import Spinner from "./Spinner";
-import CountryItem from "./CityItem";
+import CountryItem from "./CountryItem";
 import { useCities } from "../contexts/CitiesContext";
 
 function CountryList() {
-  const { cities, isLoading } = useCities();
+  const { countries, isLoading } = useCities();
   if (isLoading) return <Spinner />;
-  if (!cities.length)
+  if (!countries.length)
     return <Message message="Add a by country clicking on the map" />;
 
   // const countries = cities.reduce((arr, city) => {
@@ -16,7 +16,6 @@ function CountryList() {
   //     return [...arr, { country: city.country, emoji: city.emoji }];
   //   else return arr;
   // }, []);
-  const countries = [];
 
   return (
     <div className={styles.countriesList}>

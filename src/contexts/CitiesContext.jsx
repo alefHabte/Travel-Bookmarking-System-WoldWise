@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useReducer,
-  useState,
 } from "react";
 
 const BASE_URL = "http://localhost:8000/";
@@ -15,6 +15,7 @@ const initialState = {
   isLoading: false,
   currentCity: {},
   error: "",
+  countries: [],
 };
 
 function reducer(state, action) {
@@ -26,7 +27,12 @@ function reducer(state, action) {
       };
     }
     case "cities/loaded": {
-      return { ...state, isLoading: false, cities: action.payload };
+      return {
+        ...state,
+        isLoading: false,
+        cities: action.payload,
+        countries: action.payload,
+      };
     }
     case "city/loaded": {
       return {
@@ -41,6 +47,7 @@ function reducer(state, action) {
         ...state,
         isLoading: false,
         cities: [...state.cities, action.payload],
+        countries: [...state.countries, action.payload],
       };
     }
 
@@ -49,6 +56,9 @@ function reducer(state, action) {
         ...state,
         isLoading: false,
         cities: state.cities.filter((city) => city.id !== action.payload),
+        countries: state.countries.filter(
+          (country) => country.id !== action.payload
+        ),
         currentCity: {},
       };
     }
@@ -63,7 +73,7 @@ function reducer(state, action) {
 }
 
 function CitiesProvider({ children }) {
-  const [{ cities, isLoading, currentCity }, dispatch] = useReducer(
+  const [{ countries, cities, isLoading, currentCity }, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -88,22 +98,25 @@ function CitiesProvider({ children }) {
     fetchData();
   }, []);
 
-  async function getCity(id) {
-    if (Number(id) === currentCity.id) return;
-    dispatch({ type: "loaded" });
-    try {
-      // setIsLoading(true);
-      const response = await fetch(`${BASE_URL}cities/${id}`);
-      const data = await response.json();
-      dispatch({
-        type: "city/loaded",
-        payload: data,
-      });
-      // setCurrentCity(data);
-    } catch {
-      dispatch({ type: "rejected", payload: "Error loading City Data" });
-    }
-  }
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (Number(id) === currentCity.id) return;
+      dispatch({ type: "loaded" });
+      try {
+        // setIsLoading(true);
+        const response = await fetch(`${BASE_URL}cities/${id}`);
+        const data = await response.json();
+        dispatch({
+          type: "city/loaded",
+          payload: data,
+        });
+        // setCurrentCity(data);
+      } catch {
+        dispatch({ type: "rejected", payload: "Error loading City Data" });
+      }
+    },
+    [currentCity.id]
+  );
   async function createCity(newCity) {
     dispatch({ type: "loaded" });
     try {
@@ -150,6 +163,7 @@ function CitiesProvider({ children }) {
     <CitiesContext.Provider
       value={{
         cities,
+        countries,
         isLoading,
         currentCity,
         getCity,
