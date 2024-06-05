@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "85ca",
-      "cityName": "Tamajon",
-      "country": "Spain",
-      "emoji": "ES",
-      "date": "2024-06-05T14:40:10.760Z",
-      "notes": "",
-      "position": {
-        "lat": "41.011995591435664",
-        "lng": "-3.2629394531250004"
-      }
-    },
-    {
       "id": "f2c7",
       "cityName": "Cantalojas",
       "country": "Spain",
@@ -154,6 +142,54 @@
       "position": {
         "lat": "47.0647646283252",
         "lng": "0.6591796875000001"
+      }
+    },
+    {
+      "id": "759c",
+      "cityName": "Sebulcor",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:23:13.353Z",
+      "notes": "",
+      "position": {
+        "lat": "41.30934692166932",
+        "lng": "-3.8781738281250004"
+      }
+    },
+    {
+      "id": "3241",
+      "cityName": "Guarda",
+      "country": "Portugal",
+      "emoji": "PT",
+      "date": "2024-06-05T15:23:16.552Z",
+      "notes": "",
+      "position": {
+        "lat": "40.52837026611369",
+        "lng": "-7.130126953125001"
+      }
+    },
+    {
+      "id": "646f",
+      "cityName": "Sotonera, La",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:23:36.215Z",
+      "notes": "",
+      "position": {
+        "lat": "42.29325899271037",
+        "lng": "-0.48339843750000006"
+      }
+    },
+    {
+      "id": "4ab2",
+      "cityName": "Quintanilla de Onsona",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T15:24:36.417Z",
+      "notes": "",
+      "position": {
+        "lat": "42.486647580466446",
+        "lng": "-4.669189453125001"
       }
     }
   ]
