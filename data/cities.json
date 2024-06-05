@@ -191,6 +191,42 @@
         "lat": "42.486647580466446",
         "lng": "-4.669189453125001"
       }
+    },
+    {
+      "id": "20b9",
+      "cityName": "Sisante",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T16:22:29.048Z",
+      "notes": "",
+      "position": {
+        "lat": "39.41192522469298",
+        "lng": "-2.2412109375000004"
+      }
+    },
+    {
+      "id": "b6f1",
+      "cityName": "Herrera del Duque",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T16:22:33.215Z",
+      "notes": "",
+      "position": {
+        "lat": "39.25021786358876",
+        "lng": "-4.910888671875001"
+      }
+    },
+    {
+      "id": "5662",
+      "cityName": "Calatayud",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2024-06-05T16:23:59.441Z",
+      "notes": "",
+      "position": {
+        "lat": "41.38021001626995",
+        "lng": "-1.7138671875000002"
+      }
     }
   ]
 }
